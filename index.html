@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center bg-secondary">
+            <h1 class=" font-weight-bolder text-white"> <i class="far fa-newspaper"></i> New York Times Search</h1>
+        </div>
+        <div class="border rounded-top">
+            <h5 class="p-2 border-bottom bg-secondary rounded-top"><i class="fas fa-search"></i> Search Parameters</h5>
+            <form class="container">
+                <div class="form-group">
+                    <label for="search">Search terms</label>
+                    <input id="input-search" class="form-control" type="text" name="search">
+                </div>
+                <div class="form-group">
+                    <label for="input-number">Number of Records to Retrieve</label>
+                    <input id="input-number" class="form-control" type="number" name="input-number" value="10">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-12 col-sm-6">
+                        <label for="input-start-date">From (Optional)</label>
+                        <input id="input-start-date" class="form-control" type="date" name="input-start-date">
+                    </div>
+                    <div class="form-group col-12 col-sm-6">
+                        <label for="input-end-date">To (Optional)</label>
+                        <input id="input-end-date" class="form-control" type="date" name="input-end-date">
+                    </div>
+                    <div class="form-group">
+                        <button id="btn-submit" class="btn btn-primary">Search</button> <button id="btn-reset" class="btn btn-secondary">Clear All</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="top-results" class="border rounded-top mt-4 collapse">
+            <h5 class="p-2 border-bottom bg-secondary rounded-top mb-4"><i class="fas fa-clipboard-list"></i> Top Results</h5>
+            <div id="results">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
